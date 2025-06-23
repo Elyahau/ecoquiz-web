@@ -1,0 +1,17 @@
+📱 Installation Android :
+1. Ouvrez ce dossier sur un téléphone Android
+2. Cliquez sur le fichier "EcoQuiz_by_Elyahau.apk"
+3. Acceptez l'installation (vous devrez peut-être autoriser les sources inconnues)
+
+🌐 Jouer sur iPhone :
+1. Ouvrez le fichier "lien_web.txt" pour copier l'adresse
+2. Collez ce lien dans Safari
+3. Le jeu se lance sans téléchargement
+
+🖥️ Version Web (ordinateur) :
+1. Ouvrez le dossier "web-version"
+2. Double-cliquez sur "index.html" pour lancer le jeu dans votre navigateur
+
+—
+Jeu éducatif environnemental sur Wallis et Futuna 🌱
+Créé par Finau K.

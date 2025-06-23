@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uvea et Futuna Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌱 Uvea et Futuna Quiz by Elyahau 🌿</h1>
+  <div id="quiz-container">
+    <p id="question">Chargement...</p>
+    <div id="answers"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
