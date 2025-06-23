@@ -10,37 +10,6 @@ const quiz = [
     correct: 0
   }
 ];
-
-let current = 0;
-
-function showQuestion() {
-  const q = quiz[current];
-  document.getElementById("question").textContent = q.question;
-  const container = document.getElementById("answers");
-  container.innerHTML = "";
-
-  q.answers.forEach((answer, i) => {
-    const btn = document.createElement("button");
-    btn.textContent = answer;
-    btn.onclick = () => {
-      if (i === q.correct) {
-        alert("✅ Bonne réponse !");
-      } else {
-        alert("❌ Mauvaise réponse");
-      }
-      current++;
-      if (current < quiz.length) {
-        showQuestion();
-      } else {
-        document.getElementById("question").textContent = "🎉 Fin du quiz !";
-        container.innerHTML = "";
-      }
-    };
-    container.appendChild(btn);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", showQuestion);
 const questions = [
   {
     "question": "Quelle est la principale cause du changement climatique ?",
@@ -1200,3 +1169,33 @@ const questions = [
     "explanation": "Les espèces endémiques existent seulement dans une région donnée, leur disparition signifie une perte irréversible."
   }
 ];
+let current = 0;
+
+function showQuestion() {
+  const q = quiz[current];
+  document.getElementById("question").textContent = q.question;
+  const container = document.getElementById("answers");
+  container.innerHTML = "";
+
+  q.answers.forEach((answer, i) => {
+    const btn = document.createElement("button");
+    btn.textContent = answer;
+    btn.onclick = () => {
+      if (i === q.correct) {
+        alert("✅ Bonne réponse !");
+      } else {
+        alert("❌ Mauvaise réponse");
+      }
+      current++;
+      if (current < quiz.length) {
+        showQuestion();
+      } else {
+        document.getElementById("question").textContent = "🎉 Fin du quiz !";
+        container.innerHTML = "";
+      }
+    };
+    container.appendChild(btn);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", showQuestion);
